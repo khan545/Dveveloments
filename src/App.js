@@ -6,6 +6,11 @@ import axios from "axios";
 function App() {
   const [search, setSearch] = useState("search");
   const [recipes, SetRecipes] = useState([]);
+  const [count, setCount] = useState(0);
+  handleData = () => {
+    setCount(count + 1);
+    console.log(count);
+  };
 
   const APP_ID = "a9e97685";
   const APP_KEY = "9709c0401aa79a15eb622257a4358c0b";
